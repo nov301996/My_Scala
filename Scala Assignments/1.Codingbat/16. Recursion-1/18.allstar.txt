@@ -1,0 +1,26 @@
+--Java
+
+public String allStar(String str) {
+  if(str.length()<2)
+  {
+    return str;
+  }
+  
+  else
+  {
+    return str.charAt(0)+"*"+allStar(str.substring(1));
+  }
+}
+
+
+--Scala
+
+scala> def allstar(str:String):String={
+     | if(str.length()<2) str
+     | else str.charAt(0)+"*"+allstar(str.substring(1))}
+allstar: (str: String)String
+
+scala> allstar("hello")
+res3: String = h*e*l*l*o
+
+scala>

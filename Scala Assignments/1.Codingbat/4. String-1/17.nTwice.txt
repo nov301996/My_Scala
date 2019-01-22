@@ -1,0 +1,24 @@
+--Java
+
+public String nTwice(String str, int n) {
+  return(str.substring(0,n)+str.substring(str.length()-n,str.length()));
+}
+
+
+--Scala
+
+scala> def nTwice(str:String):String={
+     | return(str.substring(0,n)+str.substring(str.length()-n,str.length()))}
+<console>:12: error: not found: value n
+       return(str.substring(0,n)+str.substring(str.length()-n,str.length()))}
+                              ^
+<console>:12: error: not found: value n
+       return(str.substring(0,n)+str.substring(str.length()-n,str.length()))}
+                                                            ^
+
+scala> def nTwice(str:String,n:Int):String={
+     | return(str.substring(0,n)+str.substring(str.length()-n,str.length()))}
+nTwice: (str: String, n: Int)String
+
+scala> nTwice("Chocolate",3)
+res30: String = Choate

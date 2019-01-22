@@ -1,0 +1,45 @@
+--Java
+
+public String makeTags(String tag, String word) {
+  return("<"+tag+">"+word+"</"+tag+">");
+}
+
+
+
+--Scala
+
+scala> def maketags(tags:String,word:String){
+     | return "<"+tag+">"+word+"</"+tag+">"}
+<console>:12: error: not found: value tag
+return "<"+tag+">"+word+"</"+tag+">"}
+           ^
+<console>:12: error: not found: value tag
+return "<"+tag+">"+word+"</"+tag+">"}
+                             ^
+<console>:12: warning: enclosing method maketags has result type Unit: return value discarded
+return "<"+tag+">"+word+"</"+tag+">"}
+^
+
+scala> def maketags(tags:String,word:String):String {
+     | return "<"+tag+">"+word+"</"+tag+">"}
+<console>:2: error: illegal start of declaration (possible cause: missing `=' in front of current method body)
+return "<"+tag+">"+word+"</"+tag+">"}
+^
+
+scala> def maketags(tags:String,word:String):String={
+     | return "<"+tag+">"+word+"</"+tag+">"}
+<console>:12: error: not found: value tag
+return "<"+tag+">"+word+"</"+tag+">"}
+           ^
+<console>:12: error: not found: value tag
+return "<"+tag+">"+word+"</"+tag+">"}
+                             ^
+
+scala> def maketags(tag:String,word:String):String={
+     | return "<"+tag+">"+word+"</"+tag+">"}
+maketags: (tag: String, word: String)String
+
+scala> maketags("i","kartik")
+res15: String = <i>kartik</i>
+
+scala>

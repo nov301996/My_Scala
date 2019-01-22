@@ -1,0 +1,25 @@
+--Java
+
+public int sumDouble(int a, int b) {
+  if(a==b)
+  {
+    return 2*(a+b);
+  }
+  else
+  {
+    return (a+b);
+  }
+}
+
+--Scala
+
+scala> def sumDouble(a:Int,b:Int):Int={
+     | if(a==b) 2*(a+b)
+     | else (a+b)
+     | }
+sumDouble: (a: Int, b: Int)Int
+
+scala> sumDouble(2,2)
+res3: Int = 8
+
+scala>

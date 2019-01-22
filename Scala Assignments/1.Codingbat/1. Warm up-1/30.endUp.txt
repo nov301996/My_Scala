@@ -1,0 +1,25 @@
+--Java
+
+public String endUp(String str) {
+  if(str.length()<3)
+  {
+    return(str.toUpperCase());
+  }
+  else
+  {
+    return(str.substring(0,str.length()-3)+str.substring(str.length()-3,str.length()).toUpperCase());
+  }
+}
+
+
+
+--Scala
+
+scala> def Endup(str:String):String={
+     | if(str.length()<3)
+     | str.toUpperCase()
+     | else str.substring(0,str.length()-3)+str.substring(str.length()-3,str.length()).toUpperCase()}
+Endup: (str: String)String
+
+scala> Endup("hello")
+res32: String = heLLO

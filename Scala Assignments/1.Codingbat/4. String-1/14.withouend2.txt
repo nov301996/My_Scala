@@ -1,0 +1,23 @@
+--Java
+
+public String withouEnd2(String str) {
+  if(str.length()<2)
+  {
+    return("");
+  }
+  else
+  {
+    return(str.substring(1,str.length()-1));
+  }
+}
+
+
+--Scala
+
+scala> def withoutend2(str:String):String={
+     | if(str.length()<2) ""
+     | else str.substring(1,str.length()-1)}
+withoutend2: (str: String)String
+
+scala> withoutend2("hellokartik")
+res27: String = ellokarti

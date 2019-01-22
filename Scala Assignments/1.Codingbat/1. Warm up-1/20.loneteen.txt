@@ -1,0 +1,20 @@
+--Java
+
+public boolean loneTeen(int a, int b) {
+   boolean aTeen = (a >= 13 && a <= 19);
+  boolean bTeen = (b >= 13 && b <= 19);
+  return (aTeen && !bTeen) || (!aTeen && bTeen);
+}
+
+
+-Scala
+
+scala> def loneteen(a:Int,b:Int):Boolean={
+     | val ateen:Boolean= (a>=13 &&a<=19)
+     | val bteen:Boolean= (b>=13 &&b<=19)
+     | return (ateen && !bteen) || (!ateen && bteen)}
+loneteen: (a: Int, b: Int)Boolean
+
+scala> loneteen(15,43)
+res2: Boolean = true
+

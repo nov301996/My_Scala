@@ -1,0 +1,34 @@
+--Java
+
+public boolean startHi(String str) {
+  if(str.length()<2)
+  {
+    return false;
+  }
+  else
+  {
+    if(str.substring(0,2).equals("hi"))
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+}
+
+
+--Scala
+
+scala> def startHi(str:String):Boolean={
+     | if(str.length()<2)  false
+     | else if (str.substring(0,2).equals("hi")) true
+     | else false}
+startHi: (str: String)Boolean
+
+scala> startHi("Hi Team")
+res2: Boolean = false
+
+scala> startHi("hi Team")
+res3: Boolean = true

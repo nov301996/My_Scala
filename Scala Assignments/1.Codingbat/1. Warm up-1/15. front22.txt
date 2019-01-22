@@ -1,0 +1,28 @@
+--Java
+
+public String front22(String str) {
+  if(str.length()<2)
+  {
+    return str+str+str;
+  }
+  else
+  {
+    return str.substring(0,2)+str.substring(0,2)+str.substring(2,str.length())+str.substring(0,2);
+  }
+}
+
+
+--Scala
+
+scala> def front22(str:String):String={
+     | if(str.length()<2) str+str+str
+     | else str.substring(0,2)+str.substring(0,2)+str.substring(2,str.length())+str.substring(0,2)}
+front22: (str: String)String
+
+scala> front22("abcabcabc")
+res0: String = ababcabcabcab
+
+scala> front22("kartik")
+res1: String = kakartikka
+
+scala>

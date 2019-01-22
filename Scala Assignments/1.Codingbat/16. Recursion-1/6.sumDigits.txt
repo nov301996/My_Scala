@@ -1,0 +1,26 @@
+--Java
+
+public int sumDigits(int n) {
+  if(n==0)
+  {
+    return 0;
+  }
+  else
+  {
+    return (n%10+sumDigits(n/10));
+  }
+}
+
+
+--Scala
+
+
+
+scala> def sumDigits(num:Int):Int={
+     | if(num==0) 0
+     | else
+     | (num%10)+sumDigits(num/10)}
+sumDigits: (num: Int)Int
+
+scala> sumDigits(1234)
+res0: Int = 10

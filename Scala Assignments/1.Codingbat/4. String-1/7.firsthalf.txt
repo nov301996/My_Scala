@@ -1,0 +1,19 @@
+--Java
+
+public String firstHalf(String str) {
+  return(str.substring(0,(str.length())/2));
+}
+
+
+--Scala
+
+scala> def firsthalf(str:String):String={
+     | return(str.substring(0,(str.length())/2))}
+firsthalf: (str: String)String
+
+scala> firsthalf("aaabbb")
+res20: String = aaa
+
+scala>
+
+

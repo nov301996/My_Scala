@@ -1,0 +1,19 @@
+--Java
+
+public String makeOutWord(String out, String word) {
+ return(out.substring(0,(out.length()/2))+word+out.substring(out.length()/2,out.length()));
+  
+}
+
+
+
+--Scala
+
+scala> def makeoutword(out:String,word:String):String={
+     | return(out.substring(0,(out.length()/2))+word+out.substring(out.length()/2,out.length()))}
+makeoutword: (out: String, word: String)String
+
+scala> makeoutword("<<>>","yayy")
+res16: String = <<yayy>>
+
+scala>

@@ -1,0 +1,64 @@
+--Java
+
+public boolean endsLy(String str) {
+  if(str.length()<2)
+  {
+    return false;
+  }
+  else
+  {
+  return(str.substring(str.length()-2,str.length()).equals("ly"));
+  }
+}
+
+
+--Scala
+
+scala> def endsly(str:String):String={
+     | if(str.length()<2) false
+     | else str.substring(str.length()-2,str.length()-1).equals("ly"))}
+<console>:3: error: ';' expected but ')' found.
+else str.substring(str.length()-2,str.length()-1).equals("ly"))}
+                                                              ^
+
+scala> def endsly(str:String):String={
+     | if(str.length()<2) false
+     | else str.substring(str.length()-2,str.length()-1).equals("ly")}
+<console>:12: error: type mismatch;
+ found   : Boolean(false)
+ required: String
+       if(str.length()<2) false
+                          ^
+<console>:13: error: type mismatch;
+ found   : Boolean
+ required: String
+       else str.substring(str.length()-2,str.length()-1).equals("ly")}
+                                                               ^
+
+scala> def endsly(str:String):Boolean={
+     | def endsly(str:String):String={
+     | else str.substring(str.length()-2,str.length()-1).equals("ly")}
+<console>:3: error: illegal start of statement
+else str.substring(str.length()-2,str.length()-1).equals("ly")}
+^
+
+scala>
+
+scala>
+
+scala> def endsly(str:String):Boolean={
+     | if(str.length()<2) false
+     | else str.substring(str.length()-2,str.length()-1).equals("ly"))}
+<console>:3: error: ';' expected but ')' found.
+else str.substring(str.length()-2,str.length()-1).equals("ly"))}
+                                                              ^
+
+scala> def endsly(str:String):Boolean={
+     | if(str.length()<2) false
+     | else str.substring(str.length()-2,str.length()-1).equals("ly")}
+endsly: (str: String)Boolean
+
+scala> endsly("namely")
+res29: Boolean = true
+
+scala>

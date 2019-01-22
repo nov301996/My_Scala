@@ -1,0 +1,45 @@
+--Java
+
+public String changeXY(String str) {
+  if(str.length()==0) 
+  {
+    return str;
+  }
+  char ch=str.charAt(0);
+  if(ch=='x')
+  {
+    return 'y'+changeXY(str.substring(1));
+  }
+  else 
+  {
+    return ch+changeXY(str.substring(1));
+  }
+}
+
+
+--Scala
+
+scala> def changeXY(str:String):String={
+     | if(str.length()==0) str
+     | var ch=str.charAt(0)
+     | if(ch=='x') 'y'+changeXY(str.substring(1))
+     | else ch+changeXY(str.substring(1))}
+changeXY: (str: String)String
+
+scala> chnageXY("xkartikx")
+<console>:12: error: not found: value chnageXY
+       chnageXY("xkartikx")
+       ^
+
+scala> changeXY("xkarikx")
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+  at java.lang.String.charAt(String.java:658)
+  at .changeXY(<console>:15)
+  at .changeXY(<console>:16)
+  at .changeXY(<console>:17)
+  at .changeXY(<console>:17)
+  at .changeXY(<console>:17)
+  at .changeXY(<console>:17)
+  at .changeXY(<console>:17)
+  at .changeXY(<console>:16)
+  ... 32 elided

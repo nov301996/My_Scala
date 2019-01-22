@@ -1,0 +1,36 @@
+--Java
+
+public int countHi(String str) {
+  if(str.length()<2)
+  {
+    return 0;
+  }
+ else if((str.charAt(0)=='h')&&(str.charAt(1)=='i'))
+  {
+    return 1+countHi(str.substring(2));
+  }
+  else
+  {
+    return countHi(str.substring(1));
+  }
+}
+
+
+--Scala
+
+scala> def counthi(str:String):Int={
+     | if(str.length()<2) 0
+     | else if((str.charAt(0)=='h')&&(str.charAt(1)=='i')) 1+counthi(str.substring(2)
+     | else counthi(str.substring(1))}
+<console>:4: error: ')' expected but 'else' found.
+else counthi(str.substring(1))}
+^
+
+scala> def counthi(str:String):Int={
+     | if(str.length()<2) 0
+     | else if((str.charAt(0)=='h')&&(str.charAt(1)=='i')) 1+counthi(str.substring(2))
+     | else counthi(str.substring(1))}
+counthi: (str: String)Int
+
+scala> counthi("hiemhiehiehiehi")
+res6: Int = 5

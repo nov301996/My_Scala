@@ -1,0 +1,24 @@
+--Java
+
+public int diff21(int n) {
+  if(n<21)
+  {
+    return (21-n);
+  }
+  else
+  {
+    return 2*(n-21);
+  }
+}
+
+
+--Scala
+
+scala> def diff21(n:Int):Int={
+     | if(n<21) 21-n
+     | else
+     | 2*(n-21)}
+diff21: (n: Int)Int
+
+scala> diff21(25)
+res5: Int = 8

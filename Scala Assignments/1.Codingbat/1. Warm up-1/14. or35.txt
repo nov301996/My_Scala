@@ -1,0 +1,21 @@
+--Java
+
+public boolean or35(int n) {
+  if(n%3==0 || n%5==0)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+
+--Scala
+
+scala> def or35(n:Int):Boolean={
+     | if(n%3==0 ||n%5==0) true
+     | else false}
+scala> or35(15)
+res15: Boolean=true

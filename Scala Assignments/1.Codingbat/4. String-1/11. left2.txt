@@ -1,0 +1,15 @@
+--Java
+
+public String left2(String str) {
+  return(str.substring(2,str.length())+str.substring(0,2));
+}
+
+
+--Scala
+
+scala> def left2(str:String):String={
+     | return(str.substring(2,str.length())+str.substring(0,2))}
+left2: (str: String)String
+
+scala> left2("kartik")
+res24: String = rtikka

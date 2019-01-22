@@ -1,0 +1,33 @@
+--Java
+
+public int close10(int a, int b) {
+int a1=Math.abs(10-a);
+int b1=Math.abs(10-b);
+if(a1>b1)
+{
+  return (b);
+}
+else if(a1<b1)
+{
+  return (a);
+}
+else
+{
+  return 0;
+}
+}
+
+
+
+--Scala
+
+scala> def close10(a:Int,b:Int):Int={
+     | if (Math.abs(10-a) > Math.abs(10-b)) b
+     | else if(Math.abs(10-a) < Math.abs(10-b)) a
+     | else 0}
+close10: (a: Int, b: Int)Int
+
+scala> close10(7,13)
+res0: Int = 0
+
+scala>

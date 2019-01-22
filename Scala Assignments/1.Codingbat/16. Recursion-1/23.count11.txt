@@ -1,0 +1,40 @@
+--Java
+
+public int count11(String str) {
+  if(str.length()<2)
+  {
+    return 0;
+  }
+  else if(str.substring(0,2).equals("11"))
+  {
+    return 1+count11(str.substring(2));
+  }
+  else
+  {
+    return count11(str.substring(1));
+  }
+}
+
+
+--Scala
+
+scala> def count11(str:String):Int={
+     | if(str.length()<2) 0
+     | else if(str.substring(0,2).equals("11")) 1+count11(str.substring(2))
+     | else count11(str.substring(1))}
+count11: (str: String)Int
+
+scala> count11(112342112112)
+<console>:1: error: integer number too large
+count11(112342112112)
+        ^
+
+scala> count11(112211)
+<console>:13: error: type mismatch;
+ found   : Int(112211)
+ required: String
+       count11(112211)
+               ^
+
+scala> count11("112211")
+res2: Int = 2

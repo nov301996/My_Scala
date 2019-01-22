@@ -1,0 +1,18 @@
+--Java
+public boolean hasTeen(int a, int b, int c) {
+  return (a>=13 && a<=19) ||
+         (b>=13 && b<=19) ||
+         (c>=13 && c<=19);
+}
+
+
+--Scala
+
+scala> def hasteen(a:Int,b:Int,c:Int):Boolean={
+     | return (a>=13 && a<=19) ||
+     |          (b>=13 && b<=19) ||
+     |          (c>=13 && c<=19)}
+hasteen: (a: Int, b: Int, c: Int)Boolean
+
+scala> hasteen(14,25,74)
+res1: Boolean = true

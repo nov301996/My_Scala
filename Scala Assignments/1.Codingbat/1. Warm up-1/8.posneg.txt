@@ -1,0 +1,26 @@
+--Java
+
+public boolean posNeg(int a, int b, boolean negative) {
+  if(negative)
+  {
+    return(a<0 && b<0);
+  }
+  else
+  {
+    return((a<0 && b>0)||(a>0 && b<0));
+  }
+}
+
+
+--Scala
+
+scala> def posneg(a:Int,b:Int,neg:Boolean):Boolean={
+     | if(neg) a<0 && b<0
+     | else ((a<0 && b>0) || (a>0 && b<0))}
+posneg: (a: Int, b: Int, neg: Boolean)Boolean
+
+scala> posneg(-1,2,false)
+res2: Boolean = true
+
+scala> posneg(-1,-2,true)
+res3: Boolean = true

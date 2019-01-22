@@ -1,0 +1,16 @@
+--Java
+
+public String extraEnd(String str) {
+  return(str.substring(str.length()-2,str.length())+str.substring(str.length()-2,str.length())+str.substring(str.length()-2,str.length()));
+}
+
+
+--Scala
+
+scala> def extraend(str:String):String={
+     | return(str.substring(str.length()-2,str.length())+str.substring(str.length()-2,str.length())+str.substring(str.length()-2,str.length()))}
+extraend: (str: String)String
+
+scala> extraend("hello")
+res17: String = lololo
+

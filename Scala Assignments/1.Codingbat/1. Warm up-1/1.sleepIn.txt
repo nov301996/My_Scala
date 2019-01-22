@@ -1,0 +1,30 @@
+--Java
+
+public boolean sleepIn(boolean weekday, boolean vacation) {
+  if((weekday!=true)||(vacation==true))
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+
+--Scala
+
+scala> def sleepIn(weekday:Boolean,vacation:Boolean):Boolean={
+     | if(weekday!=true ||vacation==true) true
+     | else  false}
+sleepIn: (weekday: Boolean, vacation: Boolean)Boolean
+
+scala> sleepIn(true,false)
+res0: Boolean = false
+
+scala> sleepIn(false,true)
+res1: Boolean = true
+
+scala>
+
+

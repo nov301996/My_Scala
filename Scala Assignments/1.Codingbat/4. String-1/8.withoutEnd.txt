@@ -1,0 +1,17 @@
+--Java
+
+public String withoutEnd(String str) {
+  return(str.substring(1,str.length()-1));
+}
+
+
+--Scala
+
+scala> def withoutEnd(str:String):String={
+     | return(str.substring(1,str.length()-1))}
+withoutEnd: (str: String)String
+
+scala> withoutEnd("hello")
+res21: String = ell
+
+scala>

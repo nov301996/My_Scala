@@ -1,0 +1,31 @@
+--Java
+
+public boolean mixStart(String str) {
+  if(str.length()<3)
+  {
+    return false;
+  }
+  String str2=str.substring(1,3);
+  if(str2.equals("ix"))
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+
+--Scala
+
+scala> def mixstart(str:String):Boolean={
+     | if(str.length()<3) false
+     | val str2=str.substring(1,3);
+     | if(str2.equals("ix")) true
+     | else false}
+mixstart: (str: String)Boolean
+
+scala> mixstart("pix")
+res3: Boolean = true
+

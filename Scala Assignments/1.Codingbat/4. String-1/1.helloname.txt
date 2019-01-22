@@ -1,0 +1,19 @@
+--Java
+
+public String helloName(String name) {
+  return( "Hello "+name+"!");
+}
+
+
+
+--Scala
+
+scala> def helloname(str:String):String={
+     | return ("Hello"+str+"!")
+     | }
+helloname: (str: String)String
+
+scala> helloname("rao")
+res13: String = Hellorao!
+
+scala>

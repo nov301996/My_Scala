@@ -1,0 +1,18 @@
+--Java
+
+public boolean in3050(int a, int b) {if (a >= 30 && a <= 40 && b >= 30 && b <= 40) {return true; } if (a >= 40 && a <= 50 && b >= 40 && b <= 50) { return true;  }  return false; }
+
+
+
+--Scala
+
+scala> def in3050(a:Int,b:Int):Boolean={
+     | return(((a>30)&&(b<40))||((a>40)&&(b<50)))}
+in3050: (a: Int, b: Int)Boolean
+
+scala> in3050(31,45)
+res2: Boolean = false
+
+scala> in3050(31,35)
+res3: Boolean = true
+

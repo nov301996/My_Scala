@@ -1,0 +1,16 @@
+--Java
+
+public String middleTwo(String str) {
+  return(str.substring((str.length()/2)-1,(str.length()/2)+1));
+}
+
+
+--Scala
+
+scala> def middletwo(str:String):String={
+     | return(str.substring((str.length()/2)-1,(str.length()/2)+1))}
+middletwo: (str: String)String
+
+scala> middletwo("kartik")
+res28: String = rt
+

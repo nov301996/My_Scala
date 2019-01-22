@@ -1,0 +1,23 @@
+--Java
+
+public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+  if(aSmile==bSmile)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+
+--Scala
+
+scala> def monkeyTrouble(aSmile:Boolean,bSmile:Boolean):Boolean={
+     | if(aSmile==bSmile) true
+     | else false}
+monkeyTrouble: (aSmile: Boolean, bSmile: Boolean)Boolean
+
+scala> monkeyTrouble(true,true)
+res2: Boolean = true

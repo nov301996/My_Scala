@@ -1,0 +1,33 @@
+--Java 
+
+public int powerN(int base, int n) {
+  if(n==0)
+  {
+    return 1;
+  }
+  
+  else
+  {
+    return base*powerN(base,n-1);
+  }
+}
+
+
+--Scala
+
+scala> def powerN(base:Int,n:Int):Int={
+     | if(n==0) 1
+     | else base*powerN(base,n-1)}
+powerN: (base: Int, n: Int)Int
+
+scala> powerN(3,2)
+res1: Int = 9
+
+scala> power(10,5)
+<console>:12: error: not found: value power
+       power(10,5)
+       ^
+
+scala> powerN(10,5)
+res3: Int = 100000
+

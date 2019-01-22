@@ -1,0 +1,15 @@
+--Java
+
+public String makeAbba(String a, String b) {
+  return(a+b+b+a);
+}
+
+
+--Scala
+
+scala> def makeabba(a:String,b:String):String={
+     | return(a+b+b+a)}
+makeabba: (a: String, b: String)String
+
+scala> makeabba("sai","ram")
+res14: String = sairamramsai

@@ -1,0 +1,37 @@
+--Java
+
+public String notString(String str) {
+  if(str.length()>=3 && str.substring(0,3).equals("not"))
+  {
+    return str;
+  }
+  else
+  {
+    return "not " +str;
+  }
+}
+
+
+--Scala
+
+
+scala> def notstr(str:String):String={
+     | if(str.length()>3 && str.substring(0,3).equals("not")) str
+     | else  "not "+str}
+notstr: (str: String)String
+
+scala> notstr(not abc)
+<console>:13: error: not found: value not
+       notstr(not abc)
+              ^
+
+scala> notstr("not abc")
+res5: String = not abc
+
+scala> nostr("abcd")
+<console>:12: error: not found: value nostr
+       nostr("abcd")
+       ^
+
+scala> notstr("abcd")
+res7: String = not abcd

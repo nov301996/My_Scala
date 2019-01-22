@@ -1,0 +1,19 @@
+--Java
+
+public boolean nearHundred(int n) {
+  return((Math.abs(100-n)<=10)||(Math.abs(200-n)<=10));
+}
+
+
+--Scala
+
+
+scala> def nearhundred(n:Int):Boolean={
+     | return((Math.abs(100-n)<=10)||(Math.abs(200-n)<=10))}
+nearhundred: (n: Int)Boolean
+
+scala> nearhundred(8)
+res0: Boolean = false
+
+scala> nearhundred(93)
+res1: Boolean = true

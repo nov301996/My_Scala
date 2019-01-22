@@ -1,0 +1,27 @@
+--Java
+
+public String front3(String str) {
+  if(str.length()<3)
+  {
+    return str+str+str;
+  }
+  else
+  {
+    return (str.substring(0,3) + str.substring(0,3) + str.substring(0,3));
+  }
+}
+
+
+--Scala
+
+scala> def front(str:String):String={
+     | if(str.length()<3) str+str+str
+     | else str.substring(0,3) + str.substring(0,3) + str.substring(0,3)}
+front: (str: String)String
+
+scala> front("a")
+res11: String = aaa
+
+scala> front("abc")
+res12: String = abcabcabc
+

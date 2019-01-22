@@ -1,0 +1,22 @@
+--Java
+
+public String right2(String str) {
+  return(str.substring(str.length()-2,str.length())+str.substring(0,str.length()-2));
+}
+
+
+--Scala
+
+scala> def right2(str:String):String={
+     | return(str.substring(str.length()-2,str.length())+str.substring(0,str.length()-2))}
+right2: (str: String)String
+
+scala> right2()"kartik")
+<console>:1: error: ';' expected but string literal found.
+right2()"kartik")
+        ^
+
+scala> right2("kartik")
+res25: String = ikkart
+
+scala>

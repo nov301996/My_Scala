@@ -1,0 +1,28 @@
+--Java
+
+public int intMax(int a, int b, int c) {
+  int max;
+  if (a > b) {
+    max = a;
+  } else {
+    max = b;
+  }
+  
+  if (c > max) {
+    max = c;
+  }
+  
+  return max;
+}
+
+--Scala
+
+scala> def intmax(a:Int,b:Int,c:Int):Int={
+     | def intmax(a:Int,b:Int):Int={
+     | if(a>b)a
+     | else  b}
+     | intmax(a,intmax(b,c))}
+intmax: (a: Int, b: Int, c: Int)Int
+
+scala> intmax(1,2,3)
+res2: Int = 3

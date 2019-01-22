@@ -1,0 +1,25 @@
+--Java
+
+public boolean parrotTrouble(boolean talking, int hour) {
+  if(talking==true&& (hour<7 ||hour>20))
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+
+--Scala
+
+scala> def parrotTrouble(taking:Boolean,hours:Int):Boolean={
+     | if(taking==true &&(hours<7 || hours>20)) true
+     | else false}
+parrotTrouble: (taking: Boolean, hours: Int)Boolean
+
+scala> parrotTrouble(false,6)
+res0: Boolean = false
+
+

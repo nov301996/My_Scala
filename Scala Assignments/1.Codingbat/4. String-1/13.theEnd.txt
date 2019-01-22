@@ -1,0 +1,26 @@
+--Java
+
+public String theEnd(String str, boolean front) 
+{
+  if(front==true)
+  {
+    return(str.substring(0,1));
+  }
+  else
+  {
+    return(str.substring(str.length()-1,str.length()));
+  }
+}
+
+
+--Scala
+
+scala> def theend(str:String,front:Boolean):String={
+     | if(front==true)
+     | str.substring(0,1)
+     | else str.substring(str.length()-1,str.length())}
+theend: (str: String, front: Boolean)String
+
+scala> theend("kartik",true)
+res26: String = k
+

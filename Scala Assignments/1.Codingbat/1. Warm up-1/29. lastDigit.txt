@@ -1,0 +1,26 @@
+--Java
+
+
+public boolean lastDigit(int a, int b) {
+  if(a%10==b%10)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+
+
+--Scala
+
+scala> def lastdigit(a:Int,b:Int):Boolean={
+     | if(a%10==b%10) true
+     | else false}
+lastdigit: (a: Int, b: Int)Boolean
+
+scala> lastdigit(17,27)
+res31: Boolean = true
+

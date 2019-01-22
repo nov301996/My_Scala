@@ -1,0 +1,32 @@
+--Java
+
+public String startOz(String str) {
+  String result = "";
+  
+  if (str.length() >= 1 && str.charAt(0)=='o') {
+    result = result + str.charAt(0);
+  }
+  
+  if (str.length() >= 2 && str.charAt(1)=='z') {
+    result = result + str.charAt(1);
+  }
+  
+  return result;
+}
+
+--Scala
+
+scala> def startoz(str:String):String={
+     | var result=""
+     | if(str.length()>=1 &&str.charAt(0)=='o') result=result+str.charAt(0)
+     | if(str.length()>=2 &&str.charAt(1)=='z') result=result+str.charAt(1)
+     | return result}
+startoz: (str: String)String
+
+scala> startoz(ozie)
+<console>:13: error: not found: value ozie
+       startoz(ozie)
+               ^
+
+scala> startoz("ozie")
+res1: String = oz

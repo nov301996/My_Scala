@@ -1,0 +1,35 @@
+--Java
+
+public String firstTwo(String str) {
+  if(str.length()<0)
+  {
+    return ("");
+  }
+  else if(str.length()<=2)
+  {
+    return(str);
+  }
+  else
+  {
+    return(str.substring(0,2));
+  }
+}
+
+
+--Scala
+
+scala> def firstwo(str:String):String={
+     | if(str.length()<0) ""
+     | else if(str.length()<2) str
+     | else str.substring(0,2)}
+firstwo: (str: String)String
+
+scala> firsttwo("hello")
+<console>:12: error: not found: value firsttwo
+       firsttwo("hello")
+       ^
+
+scala> firstwo("hello")
+res19: String = he
+
+scala>

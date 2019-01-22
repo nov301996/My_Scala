@@ -1,0 +1,29 @@
+--Java
+
+public int fibonacci(int n) {
+  if(n==0)
+  {
+    return 0;
+  }
+  if(n==1)
+  {
+    return 1;
+  }
+  else
+  {
+    return fibonacci(n-1)+fibonacci(n-2);
+  }
+  }
+
+
+--Scala
+
+
+scala> def Fibanocci(n:Int):Int={
+     | if(n==0) 0
+     | else if(n==1) 1
+     | else Fibanocci(n-1)+Fibanocci(n-2)}
+Fibanocci: (n: Int)Int
+
+scala> Fibanocci(10)
+res0: Int = 55
