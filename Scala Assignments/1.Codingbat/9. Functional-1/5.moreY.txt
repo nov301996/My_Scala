@@ -1,0 +1,17 @@
+--Java
+
+public List<String> moreY(List<String> strings) {
+  strings.replaceAll(a->"y"+a+"y");
+  return strings;
+}
+
+
+--Scala
+
+scala> object funct5{
+     | def morey(str:List[String]):List[String]={
+     | str.map(s=>"y"+s+"y")}}
+defined object funct5
+
+scala> funct5.morey(List("a","b","c"))
+res4: List[String] = List(yay, yby, ycy)

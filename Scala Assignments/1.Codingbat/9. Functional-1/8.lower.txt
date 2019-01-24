@@ -1,0 +1,22 @@
+--Java
+
+public List<String> lower(List<String> strings) {
+  strings.replaceAll(a->a.toLowerCase());
+  return strings;
+}
+
+
+--Scala
+
+scala> object funct8{
+     | def lowerto(str:List[String]):List[String]={
+     | str.map(a=>a.toLowerCase)}}
+defined object funct8
+
+scala> funct8.lowerto("Hello","Hi","Hullo")
+<console>:13: error: too many arguments for method lowerto: (str: List[String])List[String]
+       funct8.lowerto("Hello","Hi","Hullo")
+                     ^
+
+scala> funct8.lowerto(List("Hello","Hi","Hullo"))
+res8: List[String] = List(hello, hi, hullo)

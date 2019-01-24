@@ -1,0 +1,22 @@
+--Java
+
+public List<Integer> square(List<Integer> nums) {
+  nums.replaceAll(n->n*n);
+  return nums;
+}
+
+
+--Scala
+
+scala> object funct2{
+     | def square(nums:List[Int]):List[Int]={
+     | nums.map(nums=>nums*nums)}}
+defined object funct2
+
+scala> funct2.square(List[12,3,4,-5])
+<console>:1: error: identifier expected but integer literal found.
+funct2.square(List[12,3,4,-5])
+                   ^
+
+scala> funct2.square(List(12,3,4,-5))
+res0: List[Int] = List(144, 9, 16, 25)

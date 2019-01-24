@@ -1,0 +1,18 @@
+--Java
+
+public List<Integer> math1(List<Integer> nums) {
+  nums.replaceAll(a-> (a+1)*10);
+  return nums;
+}
+
+
+--Scala
+
+scala> object funct6{
+     | def more1(num:List[Int]):List[Int]={
+     | num.map(s=>(s+1)*10)}}
+defined object funct6
+
+scala> funct6.more1(List(1,2,3,4,5))
+res5: List[Int] = List(20, 30, 40, 50, 60)
+

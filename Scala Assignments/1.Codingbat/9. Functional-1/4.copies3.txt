@@ -1,0 +1,27 @@
+--Java
+
+public List<String> copies3(List<String> strings) {
+  strings.replaceAll(a->a+a+a);
+  return strings;
+}
+
+
+--Scala
+
+scala> object funct4{
+     | def copies3(str:List[Strings]):List[Strings]={
+     | str.map(s=>s+s+s)}}
+<console>:12: error: not found: type Strings
+       def copies3(str:List[Strings]):List[Strings]={
+                                           ^
+<console>:12: error: not found: type Strings
+       def copies3(str:List[Strings]):List[Strings]={
+                            ^
+
+scala> object funct4{
+     | def copies3(str:List[String]):List[String]={
+     | str.map(s=>s+s+s)}}
+defined object funct4
+
+scala> funct4.copies3(List("a","b","c"))
+res3: List[String] = List(aaa, bbb, ccc)

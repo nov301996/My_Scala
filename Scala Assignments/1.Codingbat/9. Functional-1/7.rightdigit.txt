@@ -1,0 +1,17 @@
+--Java
+
+public List<Integer> rightDigit(List<Integer> nums) {
+  nums.replaceAll(s->s%10);
+  return nums;
+}
+
+
+--Scala
+
+scala> object funct7{
+     | def rightmost(num:List[Int]):List[Int]={
+     | num.map(a=>a%10)}}
+defined object funct7
+
+scala> funct7.rightmost(List(11,22,344,65,756))
+res6: List[Int] = List(1, 2, 4, 5, 6)

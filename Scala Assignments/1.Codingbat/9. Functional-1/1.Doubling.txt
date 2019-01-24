@@ -1,0 +1,83 @@
+--Java
+
+public List<Integer> doubling(List<Integer> nums) {
+  nums.replaceAll(n->n*2);
+  return nums;
+}
+
+
+--Scala
+
+scala> object functional1{
+     | def doubling(nums: List[Int]):List[Int]{
+     | nums.map(a->a*2)}}
+<console>:3: error: illegal start of declaration (possible cause: missing `=' in front of current method body)
+nums.map(a->a*2)}}
+^
+
+scala> object functional1{
+     | def doubling(nums: List[Int]):List[Int]={
+     | nums.map(a->a*2)}}
+<console>:13: error: not found: value a
+       nums.map(a->a*2)}}
+                ^
+<console>:13: error: not found: value a
+       nums.map(a->a*2)}}
+                   ^
+
+scala> object functional1{
+     | def doubling(nums: List[Int]):List[Int]={
+     | nums.map(nums->nums*2)}}
+<console>:13: error: value * is not a member of List[Int]
+       nums.map(nums->nums*2)}}
+                          ^
+
+scala> object functional1{
+     | def doubling(nums: List[Int]):List[Int]={
+     | nums.map(_*2)}}
+defined object functional1
+
+scala> object functional1{
+     | def doubling(nums: List[Int]):List[Int]={
+     | nums.map(nums=>nums*2)}}
+defined object functional1
+
+scala> functional1([1,2,3,4])
+<console>:1: error: illegal start of simple expression
+functional1([1,2,3,4])
+            ^
+
+scala> functional1([1,2,3])
+<console>:1: error: illegal start of simple expression
+functional1([1,2,3])
+            ^
+
+scala> functional1({1,2,3})
+<console>:1: error: ';' expected but ',' found.
+functional1({1,2,3})
+              ^
+
+scala> val a=new functional1
+<console>:11: error: not found: type functional1
+       val a=new functional1
+                 ^
+
+scala> var a=new functional1()
+<console>:11: error: not found: type functional1
+       var a=new functional1()
+                 ^
+
+scala> functional1.doubling([1,2,3])
+<console>:1: error: illegal start of simple expression
+functional1.doubling([1,2,3])
+                     ^
+
+scala> functional1.doubling(List(1,2,3))
+res0: List[Int] = List(2, 4, 6)
+
+scala> functional1.doubling(List[1,2,3])
+<console>:1: error: identifier expected but integer literal found.
+functional1.doubling(List[1,2,3])
+                          ^
+
+scala>

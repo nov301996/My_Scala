@@ -1,0 +1,16 @@
+--Java
+
+public List<String> noX(List<String> strings) {
+strings.replaceAll(a->fun.func(b));
+return strings;
+}
+
+final Function<String,String> fun = b -> {
+  if(s.equals("")) return b;
+  else if(s.charAt(0)=='x') return this.fun.func(b.substring(1));
+  else return s.charAt(0)+ this.fun.func(b.substring(1));
+};
+
+
+
+--Error in Java Code

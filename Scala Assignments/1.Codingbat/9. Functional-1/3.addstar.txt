@@ -1,0 +1,30 @@
+--Java
+
+public List<String> addStar(List<String> strings) {
+  strings.replaceAll(s ->s +"*");
+  return strings;
+}
+
+
+--Scala
+
+scala> object funct3{
+     | def allstart(str:List[String]):List[String])={
+<console>:2: error: '=' expected but ')' found.
+def allstart(str:List[String]):List[String])={
+                                           ^
+
+scala> object funct3{
+     | def allstart(str:List[String]):List[String]={
+     | str.map(str=> str+"*")}}
+defined object funct3
+
+scala> funct3.allstart(("a","bb","ccc"))
+<console>:13: error: type mismatch;
+ found   : (String, String, String)
+ required: List[String]
+       funct3.allstart(("a","bb","ccc"))
+                       ^
+
+scala> funct3.allstart(List("a","bb","ccc"))
+res2: List[String] = List(a*, bb*, ccc*)
