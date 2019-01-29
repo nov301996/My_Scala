@@ -1,0 +1,514 @@
+
+class Employee (var EmpId:Int,var EmpName:String,var Empsal:Float) {
+  var EmployeeId:Int=EmpId
+  var EmployeeName:String=EmpName
+  var EmployeeSal:Float=Empsal
+
+  def hikeSalary(percent:Float): Unit =
+  {
+    EmployeeSal=EmployeeSal+(percent*EmployeeSal)
+    println(s"EmpID: ${EmployeeId}")
+    println(s"EmpName: ${EmployeeName}")
+    println(s"EmpSal: ${EmployeeSal}")
+  }
+
+}
+
+object Demo {
+  def main(args: Array[String]): Unit =
+  {
+    val Empl =new Employee(1,"Kartik",50000)
+    Empl.hikeSalary(0.20f)
+  }
+}
+
+
+
+C:\Users\kartikv>cd desktop
+
+C:\Users\kartikv\Desktop>scalac testclass.scala
+
+C:\Users\kartikv\Desktop>scala testclass
+java.lang.NoSuchMethodException: testclass.main is not static
+        at scala.reflect.internal.util.ScalaClassLoader.run(ScalaClassLoader.scala:104)
+        at scala.reflect.internal.util.ScalaClassLoader.run$(ScalaClassLoader.scala:98)
+        at scala.reflect.internal.util.ScalaClassLoader$URLClassLoader.run(ScalaClassLoader.scala:132)
+        at scala.tools.nsc.CommonRunner.run(ObjectRunner.scala:28)
+        at scala.tools.nsc.CommonRunner.run$(ObjectRunner.scala:27)
+        at scala.tools.nsc.ObjectRunner$.run(ObjectRunner.scala:45)
+        at scala.tools.nsc.CommonRunner.runAndCatch(ObjectRunner.scala:35)
+        at scala.tools.nsc.CommonRunner.runAndCatch$(ObjectRunner.scala:34)
+        at scala.tools.nsc.ObjectRunner$.runAndCatch(ObjectRunner.scala:45)
+        at scala.tools.nsc.MainGenericRunner.runTarget$1(MainGenericRunner.scala:73)
+        at scala.tools.nsc.MainGenericRunner.run$1(MainGenericRunner.scala:92)
+        at scala.tools.nsc.MainGenericRunner.process(MainGenericRunner.scala:103)
+        at scala.tools.nsc.MainGenericRunner$.main(MainGenericRunner.scala:108)
+        at scala.tools.nsc.MainGenericRunner.main(MainGenericRunner.scala)
+
+C:\Users\kartikv\Desktop>scala testclass.scala
+
+C:\Users\kartikv\Desktop>scalac testclass.scala
+
+C:\Users\kartikv\Desktop>scala testclass
+java.lang.NoSuchMethodException: testclass.main is not static
+        at scala.reflect.internal.util.ScalaClassLoader.run(ScalaClassLoader.scala:104)
+        at scala.reflect.internal.util.ScalaClassLoader.run$(ScalaClassLoader.scala:98)
+        at scala.reflect.internal.util.ScalaClassLoader$URLClassLoader.run(ScalaClassLoader.scala:132)
+        at scala.tools.nsc.CommonRunner.run(ObjectRunner.scala:28)
+        at scala.tools.nsc.CommonRunner.run$(ObjectRunner.scala:27)
+        at scala.tools.nsc.ObjectRunner$.run(ObjectRunner.scala:45)
+        at scala.tools.nsc.CommonRunner.runAndCatch(ObjectRunner.scala:35)
+        at scala.tools.nsc.CommonRunner.runAndCatch$(ObjectRunner.scala:34)
+        at scala.tools.nsc.ObjectRunner$.runAndCatch(ObjectRunner.scala:45)
+        at scala.tools.nsc.MainGenericRunner.runTarget$1(MainGenericRunner.scala:73)
+        at scala.tools.nsc.MainGenericRunner.run$1(MainGenericRunner.scala:92)
+        at scala.tools.nsc.MainGenericRunner.process(MainGenericRunner.scala:103)
+        at scala.tools.nsc.MainGenericRunner$.main(MainGenericRunner.scala:108)
+        at scala.tools.nsc.MainGenericRunner.main(MainGenericRunner.scala)
+
+C:\Users\kartikv\Desktop>scala
+Welcome to Scala 2.12.8 (Java HotSpot(TM) Client VM, Java 1.8.0_192).
+Type in expressions for evaluation. Or try :help.
+
+scala>  class Employee{
+     |      | println("Hello")
+     |      | val empName="Suraj"
+<console>:3: error: ';' expected but 'val' found.
+            | val empName="Suraj"
+              ^
+
+scala>      | def sayHello=s"Hello $empName"
+<console>:1: error: ';' expected but 'def' found.
+            | def sayHello=s"Hello $empName"
+              ^
+
+scala>      | println("World")
+World
+
+scala>      | println(sayHello)} class Employee{
+<console>:1: error: eof expected but '}' found.
+            | println(sayHello)} class Employee{
+                               ^
+
+scala>      | println("Hello")
+Hello
+
+scala>      | val empName="Suraj"
+<console>:1: error: ';' expected but 'val' found.
+            | val empName="Suraj"
+              ^
+
+scala>      | def sayHello=s"Hello $empName"
+<console>:1: error: ';' expected but 'def' found.
+            | def sayHello=s"Hello $empName"
+              ^
+
+scala>      | println("World")
+World
+
+scala>      | println(sayHello)}
+<console>:1: error: eof expected but '}' found.
+            | println(sayHello)}
+                               ^
+
+scala>  class Employee{
+     |      | println("Hello")
+     |      | val empName="Suraj"
+<console>:3: error: ';' expected but 'val' found.
+            | val empName="Suraj"
+              ^
+
+scala>      | def sayHello=s"Hello $empName"
+<console>:1: error: ';' expected but 'def' found.
+            | def sayHello=s"Hello $empName"
+              ^
+
+scala>      | println("World")
+World
+
+scala>      | println(sayHello)}
+<console>:1: error: eof expected but '}' found.
+            | println(sayHello)}
+                               ^
+
+scala>  class Employee{
+     |      | println("Hello")
+     |      | val empName="Suraj"
+<console>:3: error: ';' expected but 'val' found.
+            | val empName="Suraj"
+              ^
+
+scala>      | def sayHello=s"Hello $empName"
+<console>:1: error: ';' expected but 'def' found.
+            | def sayHello=s"Hello $empName"
+              ^
+
+scala>      | println("World")
+World
+
+scala>      | println(sayHello)}
+<console>:1: error: eof expected but '}' found.
+            | println(sayHello)}
+                               ^
+
+scala> scalac hello.scala
+<console>:1: error: ';' expected but '.' found.
+       scalac hello.scala
+                   ^
+
+scala> exit
+<console>:12: error: not found: value exit
+       exit
+       ^
+
+scala> quit
+<console>:12: error: not found: value quit
+       quit
+       ^
+
+scala> :q
+
+C:\Users\kartikv\Desktop>scalac hello.scala
+hello.scala:20: error: type mismatch;
+ found   : Double(6.1)
+ required: Float
+    Empl hikeSalary(6.1)
+                    ^
+one error found
+
+C:\Users\kartikv\Desktop>scalac hello.scala
+
+C:\Users\kartikv\Desktop>scala hello
+No such file or class on classpath: hello
+
+C:\Users\kartikv\Desktop>scalac hello.scala
+
+C:\Users\kartikv\Desktop>scalac Demo.scala
+
+C:\Users\kartikv\Desktop>class Employee (val EmpId:Int,val EmpName:String,val Empsal:Float) {
+'class' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  var EmployeeId:Int=EmpId
+'var' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  var EmployeeName:String=EmpName
+'var' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  var EmployeeSal:Float=Empsal
+'var' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>
+C:\Users\kartikv\Desktop>  def hikeSalary(percent:Float): Unit =
+'def' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  {
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    EmployeeSal=EmployeeSal+(percent*EmployeeSal)
+'EmployeeSal' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    println(s"EmpID: ${EmployeeId}")
+'println' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    println(s"EmpName: ${EmployeeName}")
+'println' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    println(s"EmpSal: ${EmployeeSal}")
+'println' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  }
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>
+C:\Users\kartikv\Desktop>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>
+C:\Users\kartikv\Desktop>object Demo {
+'object' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  def main(args: Array[String]): Unit =
+'def' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  {
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    val Empl =new Employee(1,"Kartik",50000)
+'val' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    Empl.hikeSalary(0.20f)
+'Empl.hikeSalary' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  }
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+
+
+C:\Users\kartikv>cd desktop
+
+C:\Users\kartikv\Desktop>scalac testclass.scala
+
+C:\Users\kartikv\Desktop>scala testclass
+java.lang.NoSuchMethodException: testclass.main is not static
+        at scala.reflect.internal.util.ScalaClassLoader.run(ScalaClassLoader.scala:104)
+        at scala.reflect.internal.util.ScalaClassLoader.run$(ScalaClassLoader.scala:98)
+        at scala.reflect.internal.util.ScalaClassLoader$URLClassLoader.run(ScalaClassLoader.scala:132)
+        at scala.tools.nsc.CommonRunner.run(ObjectRunner.scala:28)
+        at scala.tools.nsc.CommonRunner.run$(ObjectRunner.scala:27)
+        at scala.tools.nsc.ObjectRunner$.run(ObjectRunner.scala:45)
+        at scala.tools.nsc.CommonRunner.runAndCatch(ObjectRunner.scala:35)
+        at scala.tools.nsc.CommonRunner.runAndCatch$(ObjectRunner.scala:34)
+        at scala.tools.nsc.ObjectRunner$.runAndCatch(ObjectRunner.scala:45)
+        at scala.tools.nsc.MainGenericRunner.runTarget$1(MainGenericRunner.scala:73)
+        at scala.tools.nsc.MainGenericRunner.run$1(MainGenericRunner.scala:92)
+        at scala.tools.nsc.MainGenericRunner.process(MainGenericRunner.scala:103)
+        at scala.tools.nsc.MainGenericRunner$.main(MainGenericRunner.scala:108)
+        at scala.tools.nsc.MainGenericRunner.main(MainGenericRunner.scala)
+
+C:\Users\kartikv\Desktop>scala testclass.scala
+
+C:\Users\kartikv\Desktop>scalac testclass.scala
+
+C:\Users\kartikv\Desktop>scala testclass
+java.lang.NoSuchMethodException: testclass.main is not static
+        at scala.reflect.internal.util.ScalaClassLoader.run(ScalaClassLoader.scala:104)
+        at scala.reflect.internal.util.ScalaClassLoader.run$(ScalaClassLoader.scala:98)
+        at scala.reflect.internal.util.ScalaClassLoader$URLClassLoader.run(ScalaClassLoader.scala:132)
+        at scala.tools.nsc.CommonRunner.run(ObjectRunner.scala:28)
+        at scala.tools.nsc.CommonRunner.run$(ObjectRunner.scala:27)
+        at scala.tools.nsc.ObjectRunner$.run(ObjectRunner.scala:45)
+        at scala.tools.nsc.CommonRunner.runAndCatch(ObjectRunner.scala:35)
+        at scala.tools.nsc.CommonRunner.runAndCatch$(ObjectRunner.scala:34)
+        at scala.tools.nsc.ObjectRunner$.runAndCatch(ObjectRunner.scala:45)
+        at scala.tools.nsc.MainGenericRunner.runTarget$1(MainGenericRunner.scala:73)
+        at scala.tools.nsc.MainGenericRunner.run$1(MainGenericRunner.scala:92)
+        at scala.tools.nsc.MainGenericRunner.process(MainGenericRunner.scala:103)
+        at scala.tools.nsc.MainGenericRunner$.main(MainGenericRunner.scala:108)
+        at scala.tools.nsc.MainGenericRunner.main(MainGenericRunner.scala)
+
+C:\Users\kartikv\Desktop>scala
+Welcome to Scala 2.12.8 (Java HotSpot(TM) Client VM, Java 1.8.0_192).
+Type in expressions for evaluation. Or try :help.
+
+scala>  class Employee{
+     |      | println("Hello")
+     |      | val empName="Suraj"
+<console>:3: error: ';' expected but 'val' found.
+            | val empName="Suraj"
+              ^
+
+scala>      | def sayHello=s"Hello $empName"
+<console>:1: error: ';' expected but 'def' found.
+            | def sayHello=s"Hello $empName"
+              ^
+
+scala>      | println("World")
+World
+
+scala>      | println(sayHello)} class Employee{
+<console>:1: error: eof expected but '}' found.
+            | println(sayHello)} class Employee{
+                               ^
+
+scala>      | println("Hello")
+Hello
+
+scala>      | val empName="Suraj"
+<console>:1: error: ';' expected but 'val' found.
+            | val empName="Suraj"
+              ^
+
+scala>      | def sayHello=s"Hello $empName"
+<console>:1: error: ';' expected but 'def' found.
+            | def sayHello=s"Hello $empName"
+              ^
+
+scala>      | println("World")
+World
+
+scala>      | println(sayHello)}
+<console>:1: error: eof expected but '}' found.
+            | println(sayHello)}
+                               ^
+
+scala>  class Employee{
+     |      | println("Hello")
+     |      | val empName="Suraj"
+<console>:3: error: ';' expected but 'val' found.
+            | val empName="Suraj"
+              ^
+
+scala>      | def sayHello=s"Hello $empName"
+<console>:1: error: ';' expected but 'def' found.
+            | def sayHello=s"Hello $empName"
+              ^
+
+scala>      | println("World")
+World
+
+scala>      | println(sayHello)}
+<console>:1: error: eof expected but '}' found.
+            | println(sayHello)}
+                               ^
+
+scala>  class Employee{
+     |      | println("Hello")
+     |      | val empName="Suraj"
+<console>:3: error: ';' expected but 'val' found.
+            | val empName="Suraj"
+              ^
+
+scala>      | def sayHello=s"Hello $empName"
+<console>:1: error: ';' expected but 'def' found.
+            | def sayHello=s"Hello $empName"
+              ^
+
+scala>      | println("World")
+World
+
+scala>      | println(sayHello)}
+<console>:1: error: eof expected but '}' found.
+            | println(sayHello)}
+                               ^
+
+scala> scalac hello.scala
+<console>:1: error: ';' expected but '.' found.
+       scalac hello.scala
+                   ^
+
+scala> exit
+<console>:12: error: not found: value exit
+       exit
+       ^
+
+scala> quit
+<console>:12: error: not found: value quit
+       quit
+       ^
+
+scala> :q
+
+C:\Users\kartikv\Desktop>scalac hello.scala
+hello.scala:20: error: type mismatch;
+ found   : Double(6.1)
+ required: Float
+    Empl hikeSalary(6.1)
+                    ^
+one error found
+
+C:\Users\kartikv\Desktop>scalac hello.scala
+
+C:\Users\kartikv\Desktop>scala hello
+No such file or class on classpath: hello
+
+C:\Users\kartikv\Desktop>scalac hello.scala
+
+C:\Users\kartikv\Desktop>scalac Demo.scala
+
+C:\Users\kartikv\Desktop>class Employee (val EmpId:Int,val EmpName:String,val Empsal:Float) {
+'class' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  var EmployeeId:Int=EmpId
+'var' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  var EmployeeName:String=EmpName
+'var' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  var EmployeeSal:Float=Empsal
+'var' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>
+C:\Users\kartikv\Desktop>  def hikeSalary(percent:Float): Unit =
+'def' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  {
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    EmployeeSal=EmployeeSal+(percent*EmployeeSal)
+'EmployeeSal' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    println(s"EmpID: ${EmployeeId}")
+'println' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    println(s"EmpName: ${EmployeeName}")
+'println' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    println(s"EmpSal: ${EmployeeSal}")
+'println' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  }
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>
+C:\Users\kartikv\Desktop>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>
+C:\Users\kartikv\Desktop>object Demo {
+'object' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  def main(args: Array[String]): Unit =
+'def' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  {
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    val Empl =new Employee(1,"Kartik",50000)
+'val' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>    Empl.hikeSalary(0.20f)
+'Empl.hikeSalary' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kartikv\Desktop>  }
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+class Employee{
+     | println("hello")
+     | val empName="Suraj"
+     | def sayHello= s"Hello ${empName}"
+     | println("World")
+     | println(sayHello)}
+defined class Employee
+
+scala> scalac hello.scala
+<console>:1: error: ';' expected but '.' found.
+scalac hello.scala
+            ^
+
+

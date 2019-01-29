@@ -1,0 +1,16 @@
+--Java
+
+public List<Integer> noTeen(List<Integer> nums) {
+  nums.removeIf( a-> (a>=13 && a<=19));
+  return nums;
+}
+
+
+--Scala
+
+scala> def noTeen(list:List[Int]):List[Int]={
+     | list.filter(n => (n<13 || n>19))}
+noTeen: (list: List[Int])List[Int]
+
+scala> noTeen(List(1,15,17,18,21,32,43,65))
+res6: List[Int] = List(1, 21, 32, 43, 65)

@@ -1,0 +1,16 @@
+--Java
+
+public List<Integer> noNeg(List<Integer> nums) {
+  nums.removeIf(n -> n<0);
+  return nums;
+}
+
+
+--Scala
+
+scala> def NoNeg(list:List[Int]):List[Int]={
+     | list.filter(n => n>0)}
+NoNeg: (list: List[Int])List[Int]
+
+scala> NoNeg(List(-1,2,-4,5))
+res1: List[Int] = List(2, 5)

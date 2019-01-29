@@ -1,0 +1,14 @@
+--Java
+
+public List<Integer> two2(List<Integer> nums) {
+  return nums.stream().map(a -> a*2).filter(n -> n%10 !=2).collect(Collectors.toList());
+}
+
+--Scala
+
+scala> def two2(nums:List[Int]):List[Int]={
+     | nums.map(_*2).filterNot(_ %10 ==2)}
+two2: (nums: List[Int])List[Int]
+
+scala> two2(List(1,2,3,4,5,6))
+res1: List[Int] = List(4, 6, 8, 10)

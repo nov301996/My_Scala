@@ -1,0 +1,15 @@
+--Scala
+
+scala> def square56(nums:List[Int]):List[Int]={
+     | nums.map(x => x*x).map(_+10).filterNot(n => (n%10==5)||(n%10==6))}
+square56: (nums: List[Int])List[Int]
+
+scala> square56(List(1,2,3,4,5,6,7,8))
+res1: List[Int] = List(11, 14, 19, 59, 74)
+
+scala> def square56(nums:List[Int]):List[Int]={
+     | nums.map(a =>(a*a)+10).filterNot(n => (n%10==5)||(n%10==6))}
+square56: (nums: List[Int])List[Int]
+
+scala> square56(List(1,2,3,4,5,6,7,8))
+res2: List[Int] = List(11, 14, 19, 59, 74)

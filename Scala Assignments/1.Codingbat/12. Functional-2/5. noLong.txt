@@ -1,0 +1,16 @@
+--Java
+
+public List<String> noLong(List<String> strings) {
+  strings.removeIf( a-> a.length()>=4);
+  return strings;
+}
+
+
+--Scala
+
+scala> def noLong(strings:List[String]):List[String]={
+     | strings.filter(a => a.length<4)}
+noLong: (strings: List[String])List[String]
+
+scala> noLong(List("aa","bbb","cccc","ddddd"))
+res8: List[String] = List(aa, bbb)

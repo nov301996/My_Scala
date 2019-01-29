@@ -1,0 +1,16 @@
+--Java
+
+public List<Integer> no9(List<Integer> nums) {
+  nums.removeIf(a -> (a%10==9));
+  return nums;
+}
+
+
+--Scala
+
+scala> def no9(list:List[Int]):List[Int]={
+     | list.filter(n => (n%10 !=9))}
+no9: (list: List[Int])List[Int]
+
+scala> no9(List(9,19,29,6,34,23))
+res2: List[Int] = List(6, 34, 23)

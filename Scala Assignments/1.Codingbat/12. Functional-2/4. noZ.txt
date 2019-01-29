@@ -1,0 +1,16 @@
+--Java
+
+public List<String> noZ(List<String> strings) {
+  strings.removeIf(a -> a.contains("z"));
+  return strings;
+}
+
+
+--Scala
+
+scala> def noZ(strings:List[String]):List[String]={
+     | strings.filter( a => !(a.contains("z")))}
+noZ: (strings: List[String])List[String]
+
+scala> noZ(List("aaa","bbbb","czccc","ddd","eezzz"))
+res7: List[String] = List(aaa, bbbb, ddd)

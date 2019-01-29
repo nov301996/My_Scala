@@ -1,0 +1,17 @@
+--Java
+
+public List<String> no34(List<String> strings) {
+  strings.removeIf(a -> (a.length()==3 || a.length()==4));
+  return strings;
+}
+
+
+
+--Scala
+
+scala> def no34(string:List[String]):List[String]={
+     | string.filter(a => !(a.length==3 || a.length==4))}
+no34: (string: List[String])List[String]
+
+scala> no34(List("aaa","bbbb","ccccc","dD"))
+res9: List[String] = List(ccccc, dD)

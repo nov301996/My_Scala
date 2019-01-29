@@ -14,3 +14,11 @@ public int max1020(int a, int b) {
 --Scala
 
 
+scala> def max1020(a:Int,b:Int):Int={
+     | val max=List(a,b).max
+     | if(max>10 && max<20) max else 0}
+max1020: (a: Int, b: Int)Int
+
+scala> max1020(12,19)
+res0: Int = 19
+
