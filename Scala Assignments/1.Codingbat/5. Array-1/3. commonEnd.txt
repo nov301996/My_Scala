@@ -1,0 +1,28 @@
+--Java
+
+public boolean commonEnd(int[] a, int[] b) {
+  if(a.length <1 && b.length <1){
+    return false;
+  }
+  else
+  {
+    if((a[0]==b[0]||(a[a.length-1]==b[b.length-1])))
+    {
+      return true;
+    }
+    return false;
+  }
+}
+
+
+--Scala
+
+scala> def commonEnd(a:Array[Int],b:Array[Int]):Boolean={
+     | if(a.length <1 && b.length <1) false else a.head==b.head || a.last==b.last
+     | }
+commonEnd: (a: Array[Int], b: Array[Int])Boolean
+
+scala> commonEnd(Array(1,2,3,4,5,6,1),Array(2,3,4,5,6,7,8,1))
+res6: Boolean = true
+
+scala>

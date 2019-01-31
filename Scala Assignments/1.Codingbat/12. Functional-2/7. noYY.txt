@@ -10,9 +10,3 @@ public List<String> noYY(List<String> strings) {
 
 --Scala
 
-scala> def noYY(str:List[String]):List[String]={
-     | str.map(_+'y').filterNot(_.contains("yy"))}
-noYY: (str: List[String])List[String]
-
-scala> noYY(List("a","bb","ay"))
-res0: List[String] = List(ay, bby)

@@ -1,0 +1,52 @@
+--Java
+
+  public boolean sameFirstLast(int[] nums) {
+  if((nums.length>=1) && (nums[0]==nums[nums.length-1]))
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+
+}
+
+
+
+--Scala
+
+
+
+scala> def firstLast(nums:Array[Int]):Boolean={
+     | if(nums.length<0) false else nums.head==num.tail}
+<console>:12: error: not found: value num
+       if(nums.length<0) false else nums.head==num.tail}
+                                               ^
+
+scala> def firstLast(nums:Array[Int]):Boolean={
+     | if(nums.length<0) false else nums.head==nums.tail}
+<console>:12: warning: comparing values of types Int and Array[Int] using `==' will always yield false
+       if(nums.length<0) false else nums.head==nums.tail}
+                                             ^
+firstLast: (nums: Array[Int])Boolean
+
+scala> firstLast(Array(1,2,3,4,5,1))
+res0: Boolean = false
+
+scala> def firstLast(nums:Array[Int]):Boolean={
+     | if(nums.length<1) false else nums.head==nums.tail}
+<console>:12: warning: comparing values of types Int and Array[Int] using `==' will always yield false
+       if(nums.length<1) false else nums.head==nums.tail}
+                                             ^
+firstLast: (nums: Array[Int])Boolean
+
+scala> firstLast(Array(1,2,3,4,5,1))
+res1: Boolean = false
+
+scala> def firstLast(nums:Array[Int]):Boolean={
+     | if(nums.length<1) false else nums.head==nums.last}
+firstLast: (nums: Array[Int])Boolean
+
+scala> firstLast(Array(1,2,3,4,5,1))
+res2: Boolean = true
